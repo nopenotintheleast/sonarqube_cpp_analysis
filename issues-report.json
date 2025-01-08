@@ -1,0 +1,88 @@
+{
+    "issues": [
+        {
+            "engineId": "cppcheck",
+            "ruleId": "missingIncludeSystem",
+            "severity": "INFO",
+            "type": "CODE_SMELL",
+            "primaryLocation": {
+                "message": "Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+                "filePath": "main.cpp",
+                "textRange": {
+                    "startLine": 1,
+                    "endLine": 1
+                }
+            }
+        },
+        {
+            "engineId": "cppcheck",
+            "ruleId": "missingIncludeSystem",
+            "severity": "INFO",
+            "type": "CODE_SMELL",
+            "primaryLocation": {
+                "message": "Include file: <vector> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+                "filePath": "main.cpp",
+                "textRange": {
+                    "startLine": 2,
+                    "endLine": 2
+                }
+            }
+        },
+        {
+            "engineId": "cppcheck",
+            "ruleId": "containerOutOfBounds",
+            "severity": "MAJOR",
+            "type": "CODE_SMELL",
+            "primaryLocation": {
+                "message": "Out of bounds access in expression 'members[i]'",
+                "filePath": "main.cpp",
+                "textRange": {
+                    "startLine": 26,
+                    "endLine": 26
+                }
+            }
+        },
+        {
+            "engineId": "cppcheck",
+            "ruleId": "containerOutOfBounds",
+            "severity": "MAJOR",
+            "type": "CODE_SMELL",
+            "primaryLocation": {
+                "message": "Out of bounds access in expression 'members[i]'",
+                "filePath": "main.cpp",
+                "textRange": {
+                    "startLine": 25,
+                    "endLine": 25
+                }
+            }
+        },
+        {
+            "engineId": "cppcheck",
+            "ruleId": "stlOutOfBounds",
+            "severity": "MAJOR",
+            "type": "CODE_SMELL",
+            "primaryLocation": {
+                "message": "When i==members.size(), members[i] is out of bounds.",
+                "filePath": "main.cpp",
+                "textRange": {
+                    "startLine": 26,
+                    "endLine": 26
+                }
+            }
+        },
+        {
+            "engineId": "cppcheck",
+            "ruleId": "unusedFunction",
+            "severity": "INFO",
+            "type": "CODE_SMELL",
+            "primaryLocation": {
+                "message": "The function 'printGroupInfo' is never used.",
+                "filePath": "main.cpp",
+                "textRange": {
+                    "startLine": 24,
+                    "endLine": 24
+                }
+            }
+        }
+    ]
+}
